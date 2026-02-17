@@ -57,7 +57,7 @@ head(cmpst)
 summary(cmpst)
 
 ## Calculate Industry Concentration (IC)
-IC_df <- cmpst2 %>%
+IC_df <- cmpst %>%
   filter(!is.na(SIC2) & !is.na(year)) %>%
   mutate(SLS_num = as.numeric(SLS)) %>%
   filter(!is.na(SLS_num) & SLS_num > 0) %>%
