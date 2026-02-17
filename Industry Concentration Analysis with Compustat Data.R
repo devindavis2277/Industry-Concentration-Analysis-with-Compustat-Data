@@ -8,7 +8,7 @@ library(statar)
 library(scales) 
 
 ## Read in data 
-cmpst <- read_sas("~/Desktop/compst7023.sas7bdat")
+cmpst <- read_sas("C:/Users/Davis/OneDrive/Desktop/compst7023.sas7bdat")
 cmpst <- as.data.frame(cmpst)
 
 ## Replace some negative values with missing 
